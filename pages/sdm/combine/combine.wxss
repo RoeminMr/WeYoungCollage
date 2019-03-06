@@ -1,0 +1,11 @@
+/* pages/combine/combine.wxss */
+.myCanvas{
+  margin-top: 20px;
+   /* position: absolute; */
+  /* z-index:0; 
+  height: 300px;
+  width:300px; */
+}
+.baocun{
+  margin-top: 50px;
+}

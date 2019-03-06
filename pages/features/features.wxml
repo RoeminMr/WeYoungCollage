@@ -1,0 +1,70 @@
+<!--pages/features/features.wxml-->
+<swiper class="swiper" indicator-dots="true" autoplay="true" interval="5000" duration="1000">
+  <block wx:for="{{swiperPic}}" wx:key="index">
+    <swiper-item>
+      <image src="{{item.url}}" class="slide-image" mode="aspectFill" />
+    </swiper-item>
+  </block>
+</swiper>
+
+
+    <view class="marquee" wx:if="{{notices.length != ' '}}">
+      <view class="content">
+        <text>{{notices}}</text>
+        <text style="display: inline-block; width: 5em;"></text>
+        <text>{{notices}}</text>
+        <text style="display: inline-block; width: 5em;"></text>
+        <text>{{notices}}</text>
+        <text style="display: inline-block; width: 5em;"></text>
+      </view>
+
+ 
+
+  </view>
+
+
+<view class="page">
+  <view class="page__bd">
+    <view class="weui-grids">
+      <block wx:for="{{grids}}" wx:key="*this">
+        <navigator url="{{item.navurl}}" bindtap='{{item.event}}' class="weui-grid" hover-class="weui-grid_active">
+          <image class="weui-grid__icon" src="{{item.gridIcon}}" />
+          <view class="weui-grid__label">{{item.name}}</view>
+        </navigator>
+      </block>
+
+       <!-- <view class="weui-grid" hover-class="weui-grid_active" style='height:96.200px;'> -->
+        
+        <navigator class="weui-grid" hover-class="weui-grid_active" style='height:96.200px;width:1/3;text-align:center;font-size:14px;padding:26px 1px;'  target="miniProgram" open-type="navigate" app-id="wx7e7de019ad1f41a1" path="pages/home/index/index" extra-data="" version="release"><image class="weui-grid__icon" src="/images/qiqiu.png"></image>
+        <text >表白墙</text>
+        </navigator>
+
+       <!-- </view> -->
+
+      
+
+      <view class="weui-grid" hover-class="weui-grid_active" style='height:96.200px;'>
+        <button open-type="contact">
+          <!--把这里的contact改成feedback效果也不错，现在很纠结啊 -->
+          <image class="weui-grid__icon" src="/images/service.png"></image>
+          <text>意见留言</text>
+        </button>
+
+      </view>
+    </view>
+    <button open-type="share" class="login-btn">
+      <text>好用！分享给同学</text>
+    </button>
+    <view wx:if="{{uid=='' || pwd=='' }}" bindtap='logout' class="login-btn">
+      <text>学号登录</text>
+    </view>
+    <view wx:else bindtap='logout' class="logout-btn">
+      <text>注销登录</text>
+    </view>
+    <!-- 广告位 -->
+    <view class='ads'>
+      <ad unit-id="adunit-91192255643a452c"></ad>
+    </view>
+    <!-- 广告位结束 -->
+  </view>
+</view>

@@ -1,0 +1,24 @@
+<!--pages/index/index.wxml-->
+
+<view class="container">
+  <image class="bgPic" wx:if="{{bgPic1}}" src="{{bgPic1}}"></image>
+  <view class="emptyBg" wx:else></view>
+</view>
+<view class="btnContainer">
+  <button data-way="avatar" open-type="getUserInfo" bind:tap="getAvatar">使用头像</button>
+  <button data-way="camera" bind:tap="chooseImage">使用相机</button>
+  <button data-way="album" bind:tap="chooseImage">相册选择</button>
+  <button bind:tap="nextPage" disabled="{{!picChoosed}}">下一步</button>
+</view>
+
+<!-- //此处时拒绝授权的警告窗口，如果用户点击拒绝，则会弹出这个窗口，确定按钮再次绑定授权弹窗事件。
+<view class="authorize-warning" hidden="{{!isShowAhturoizeWarning}}">
+    <view class="box">
+      <view class="title">警告</view>
+      <view class="content">拒绝授权后，将无法通知您。。。。。点击“取消”拒绝提醒，点击“确定”再次尝试授权？</view>
+      <view class="footer">
+        <button bindtap="cancelAuthroize">取消</button>
+        <button open-type="getUserInfo" bindgetuserinfo="getAuthorize">确定</button>
+      </view>
+    </view>
+  </view>  -->

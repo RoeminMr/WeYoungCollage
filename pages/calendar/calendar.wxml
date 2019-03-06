@@ -1,0 +1,50 @@
+<view class="page">
+  <view class="page__bd">
+    <view class="weui-tab">
+      <view class="weui-navbar">
+        <block wx:for="{{tabs}}" wx:key="*this">
+          <view id="{{index}}" class="weui-navbar__item {{activeIndex == index ? 'weui-bar__item_on' : ''}}" bindtap="tabClick">
+            <view class="weui-navbar__title">{{item}}</view>
+          </view>
+        </block>
+        <view class="weui-navbar__slider" style="left: {{sliderLeft}}px; transform: translateX({{sliderOffset}}px); -webkit-transform: translateX({{sliderOffset}}px);"></view>
+      </view>
+      <view class="weui-tab__panel">
+        <view class="weui-tab__content" hidden="{{activeIndex != 0}}">
+          <view class='page'>
+            <view class='setCenter'>
+              <text>\n</text>
+              <view class="weui-article__h2">现在是：{{time}}</view>
+              <image src='https://tu.54tiancai.top/gqx/xl.jpg?v=1.0' mode='widthFix'></image>
+            </view>
+          </view>
+        </view>
+        <view class="weui-tab__content" hidden="{{activeIndex != 1}}">
+          <view class='page'>
+            <view class='setCenter'>
+              <text>\n</text>
+              <!-- <view class="weui-article__h2">建议手机横屏观看</view> -->
+              <image src='https://tu.54tiancai.top/gqx/dt.jpg?v=1.0' mode='widthFix'></image>
+            </view>
+
+          </view>
+        </view>
+      </view>
+    </view>
+  </view>
+</view>
+<button open-type="share" class="login-btn">
+  <text>分享校历/地图给同学</text>
+</button>
+<!-- 广告位 -->
+<view class='ads'>
+  <ad unit-id="adunit-255a40d8cb93a33e"></ad>
+</view>
+<!-- 广告位结束 -->
+<view class="weui-footer">
+  <view class="weui-footer__links">
+    <navigator url="/pages/features/about" class="weui-footer__link">LYM&DY</navigator>
+    <navigator url="/pages/features/about" class="weui-footer__link">校园助手</navigator>
+  </view>
+  <view class="weui-footer__text">Copyright © 2018 广东青年职业学院.</view>
+</view>

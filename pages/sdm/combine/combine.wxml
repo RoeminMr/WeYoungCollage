@@ -1,0 +1,6 @@
+<view >
+  <canvas  class="myCanvas" canvas-id="myCanvas" style="height:300px;;width:100%;"/>
+  <button class='baocun' bind:tap="savePic">保存至相册</button>
+  <button open-type="share" class="login-btn">分享给好友</button>
+   
+</view>

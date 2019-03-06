@@ -1,0 +1,60 @@
+
+{
+  "pages": [
+    "pages/index/index",
+    "pages/features/features",
+    "pages/classQuery/index",
+
+
+
+    "pages/features/about",
+    "pages/welcome/welcome",
+    "pages/calendar/calendar",
+    "pages/score/showScore/showScore",
+    "pages/error/queryerror",
+    "pages/net/netfare",
+    "pages/net/netBind",
+    "pages/electricity/electricityFare",
+    "pages/electricity/electricityBind",
+    "pages/Transport/Transport",
+    "pages/tel/departmentTel/departmentTel",
+    "pages/stuInfo/stuInfo"
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarTitleText": "微广青",
+    "navigationBarTextStyle": "white",
+    "navigationBarBackgroundColor": "#00aeff"
+  },
+  "tabBar": {
+    "boderStyle": "white",
+    "selectedColor": "#4A6141",
+    "color": "#333",
+    "backgroundColor": "#fff",
+    "position": "bottom",
+    "list": [
+      
+
+      
+
+      {
+        "pagePath": "pages/classQuery/index",
+        "text": "课表",
+        "iconPath": "images/class.png",
+        "selectedIconPath": "images/class_HL.png"
+      },
+
+      {
+        "pagePath": "pages/features/features",
+        "text": "其他",
+        "iconPath": "images/tools.png",
+        "selectedIconPath": "images/tools_HL.png"
+      }
+    ]
+  },
+
+  "navigateToMiniProgramAppIdList": [
+    "wx7e7de019ad1f41a1"
+  ]
+}
+

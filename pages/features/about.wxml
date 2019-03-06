@@ -1,0 +1,41 @@
+<page>
+  <view class="container">
+    <view class="header">
+      <view class="black-cover">
+      </view>
+      <image class="logo" src="http://tu.54tiancai.top/gqx/banner/banner2.jpg">
+      </image>
+      <image class="title" src="/images/title.png">
+      </image>
+    </view>
+    <view class="content">
+      <view class="version">
+        <view class="version-title">
+          <text class="title-name">微广青</text>
+          <text class="version-text">公测</text>
+        </view>
+      </view>
+      <view class="describe">
+        <text class="desc-title">安全与隐私</text>
+        <text class="desc-content">你登录时所输入的账号和密码会存储于手机本地，服务端不保存。</text>
+        <text class="desc-content">每次使用各项服务时，会携带账号与密码通过HTTPS加密通道与服务端进行交互。</text>
+        <text class="desc-content">本程序是第三方应用，如果不放心，请不要使用这个小程序。</text>
+        <text class="desc-content"></text>
+
+        <text class="desc-title">简介</text>
+        <text class="desc-content">微广青是一款微信小程序，参考了贝壳小盒子而开发成，感谢贝壳小盒子，有别于公众号的一种全新的连接用户与服务的方式，无需下载与安装即可在微信内被便捷地获取和传播，同时具有出色的使用体验。</text>
+        <text class="desc-content">微广青有更好用的课表查询，美观大方，清晰明了。</text>
+        <text class="desc-content">微广青有更方便的校历查询，对比教务网发布的Excel截图校历，界面优雅，清新脱俗。</text>
+        <text class="desc-content">微广青有详细清晰的校园出行资料，校园大巴几点发车一目了然。</text>
+        <text class="desc-content">微广青更是/更有... （期待您的发现）</text>
+      </view>
+    </view>
+    <view class="footer">
+      <view class="footer-beingshawn">
+        <text>LYM&DY | 校园助手</text>
+      </view>
+      <text>广青院</text>
+      <text>Copyright @ 2018 All Rights Reserved</text>
+    </view>
+  </view>
+</page>

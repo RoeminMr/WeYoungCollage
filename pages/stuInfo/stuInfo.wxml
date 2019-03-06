@@ -1,0 +1,67 @@
+<!-- pages/stuInfo/stuInfo.wxml-->
+<view class='GreenBG'>
+  <view class="weui-panel weui-panel_access GreenBG">
+    <view class="weui-panel__bd GreenBG">
+      <view class="weui-media-box weui-media-box_appmsg GreenBG">
+        <view class="weui-media-box__hd weui-media-box__hd_in-appmsg">
+          <view class="weui-media-box__thumb">
+            <open-data type="userAvatarUrl"></open-data>
+          </view>
+        </view>
+        <view class="weui-media-box__bd weui-media-box__bd_in-appmsg">
+          <view class="weui-media-box__title">{{jsonStr.real_name}}，欢迎你的到来</view>
+          <!-- <view class="weui-media-box__title">{{jsonStr.real_name}}</view> -->
+        </view>
+      </view>
+    </view>
+  </view>
+</view>
+<view class="ykt-card">
+  <view class="ykt-black-line"></view>
+  <view class="ykt-content">
+    <view class="ykt-ye">
+      <text class="ykt-ye-name">姓名：{{jsonStr.real_name}}</text>
+      <text class="ykt-ye-name">班级：{{jsonStr.class_name}}</text>
+      <!-- <text class="ykt-ye-name">学号：{{jsonStr[0][0].stuID}}</text> -->
+      <text class="ykt-ye-name">系部：{{jsonStr.faculty}}</text>
+    </view>
+    <view class="ykt-img">
+      <image src="/images/card-bg.png"></image>
+    </view>
+  </view>
+  <view class="ykt-card-more">
+    <text class="ykt-ye-time"> </text>
+    <text class="ykt-ye-id">{{jsonStr.grade}}入学</text>
+  </view>
+</view>
+<!-- <view class="ykt-detail-wraper">
+  <view class="ykt-head">
+    <text class="ykt-type-name">其他信息</text>
+  </view>
+  <view class="detail-list">
+    <view class="detail-item">
+      <text class="detail-item-label">性别</text>
+      <text class="detail-item-value">{{jsonStr.sex}}</text>
+    </view>
+    <view class="detail-item">
+      <text class="detail-item-label">民族</text>
+      <text class="detail-item-value">{{jsonStr[0][0].stuNation}}</text>
+    </view>
+    <view class="detail-item">
+      <text class="detail-item-label">出生日期</text>
+      <text class="detail-item-value">{{jsonStr[0][0].stuBirth}}</text>
+    </view>
+  </view>
+</view> -->
+
+    <view class='ads'>
+      <ad unit-id="adunit-9d1dca34d4afd64e"></ad>
+    </view>
+
+<view class="weui-footer">
+  <view class="weui-footer__links">
+    <navigator url="/pages/features/about" class="weui-footer__link">LYM&DY</navigator>
+    <navigator url="/pages/features/about" class="weui-footer__link">微广青</navigator>
+  </view>
+  <view class="weui-footer__text">微广青 © 2018 广东青年职业学院.</view>
+</view>

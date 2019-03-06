@@ -1,0 +1,192 @@
+<!--pages/score/showScore/showScore.wxml-->
+
+  <!-- pages/stuInfo/stuInfo.wxml-->
+<view class='GreenBG'>
+  <view class="weui-panel weui-panel_access GreenBG">
+    <view class="weui-panel__bd GreenBG">
+      <view class="weui-media-box weui-media-box_appmsg GreenBG">
+        <view class="weui-media-box__hd weui-media-box__hd_in-appmsg">
+          <view class="weui-media-box__thumb">
+            <open-data type="userAvatarUrl"></open-data>
+          </view>
+        </view>
+        <view class="weui-media-box__bd weui-media-box__bd_in-appmsg">
+          <view class="weui-media-box__title">欢迎来到成绩查询系统</view>
+          <!-- <view class="weui-media-box__title">{{jsonStr.real_name}}</view> -->
+        </view>
+      </view>
+    </view>
+  </view>
+</view>
+
+    <view class="page__desc" style='color:#000;'>
+      注：最终成绩以教务为准，本程序计算结果仅作参考,不具有官方权威性。请先完成教学评价。
+    </view>
+
+  <view class="ykt-black-line"><text>2018-2019学年上学期</text></view>
+
+    <!-- <view wx:for="{{jsonContent}}" wx:key="2018-2019">
+<view wx:for="{{item[2018-2019][1]}}" wx:for-item="cj" wx:key="2018-2019">
+    <view class="ykt-card">
+  <view  class="ykt-content">
+    <view class="ykt-ye">
+      <text class="ykt-ye-name">科目：{{cj['0'].lesson_name}}</text>
+      <text class="ykt-ye-name">成绩：{{item.score}}</text>
+      <text class="ykt-ye-name">绩点：{{item.point}}</text>
+    </view>
+  </view>
+</view>
+
+  </view>
+  </view> -->
+  
+<view class="ykt-card">
+  <view class="ykt-content">
+    <view class="ykt-ye">
+      <text class="ykt-ye-name">科目：{{jsonContent["2018-2019"][1]["0"].lesson_name}}</text>
+      <text class="ykt-ye-name">成绩：{{jsonContent["2018-2019"][1]["0"].score}}</text>
+      <text class="ykt-ye-name">绩点：{{jsonContent["2018-2019"][1]["0"].point}}</text>
+    </view>
+  </view>
+</view>
+
+<view class="ykt-card">
+  <view class="ykt-content">
+    <view class="ykt-ye">
+      <text class="ykt-ye-name">科目：{{jsonContent["2018-2019"][1]["1"].lesson_name}}</text>
+      <text class="ykt-ye-name">成绩：{{jsonContent["2018-2019"][1]["1"].score}}</text>
+      <text class="ykt-ye-name">绩点：{{jsonContent["2018-2019"][1]["1"].point}}</text>
+    </view>
+  </view>
+</view>
+
+<view class="ykt-card">
+  <view class="ykt-content">
+    <view class="ykt-ye">
+      <text class="ykt-ye-name">科目：{{jsonContent["2018-2019"][1]["2"].lesson_name}}</text>
+      <text class="ykt-ye-name">成绩：{{jsonContent["2018-2019"][1]["2"].score}}</text>
+      <text class="ykt-ye-name">绩点：{{jsonContent["2018-2019"][1]["2"].point}}</text>
+    </view>
+  </view>
+</view>
+
+<view class="ykt-card">
+  <view class="ykt-content">
+    <view class="ykt-ye">
+      <text class="ykt-ye-name">科目：{{jsonContent["2018-2019"][1]["3"].lesson_name}}</text>
+      <text class="ykt-ye-name">成绩：{{jsonContent["2018-2019"][1]["3"].score}}</text>
+      <text class="ykt-ye-name">绩点：{{jsonContent["2018-2019"][1]["3"].point}}</text>
+    </view>
+  </view>
+</view>
+
+<view class="ykt-card">
+  <view class="ykt-content">
+    <view class="ykt-ye">
+      <text class="ykt-ye-name">科目：{{jsonContent["2018-2019"][1]["4"].lesson_name}}</text>
+      <text class="ykt-ye-name">成绩：{{jsonContent["2018-2019"][1]["4"].score}}</text>
+      <text class="ykt-ye-name">绩点：{{jsonContent["2018-2019"][1]["4"].point}}</text>
+    </view>
+  </view>
+</view>
+
+<view class="ykt-card">
+  <view class="ykt-content">
+    <view class="ykt-ye">
+      <text class="ykt-ye-name">科目：{{jsonContent["2018-2019"][1]["5"].lesson_name}}</text>
+      <text class="ykt-ye-name">成绩：{{jsonContent["2018-2019"][1]["5"].score}}</text>
+      <text class="ykt-ye-name">绩点：{{jsonContent["2018-2019"][1]["5"].point}}</text>
+    </view>
+  </view>
+</view>
+
+<view class="ykt-card">
+  <view class="ykt-content">
+    <view class="ykt-ye">
+      <text class="ykt-ye-name">科目：{{jsonContent["2018-2019"][1]["6"].lesson_name}}</text>
+      <text class="ykt-ye-name">成绩：{{jsonContent["2018-2019"][1]["6"].score}}</text>
+      <text class="ykt-ye-name">绩点：{{jsonContent["2018-2019"][1]["6"].point}}</text>
+    </view>
+  </view>
+</view>
+
+<view class="ykt-card">
+  <view class="ykt-content">
+    <view class="ykt-ye">
+      <text class="ykt-ye-name">科目：{{jsonContent["2018-2019"][1]["7"].lesson_name}}</text>
+      <text class="ykt-ye-name">成绩：{{jsonContent["2018-2019"][1]["7"].score}}</text>
+      <text class="ykt-ye-name">绩点：{{jsonContent["2018-2019"][1]["7"].point}}</text>
+    </view>
+  </view>
+</view>
+
+<view class="ykt-card">
+  <view class="ykt-content">
+    <view class="ykt-ye">
+      <text class="ykt-ye-name">科目：{{jsonContent["2018-2019"][1]["8"].lesson_name}}</text>
+      <text class="ykt-ye-name">成绩：{{jsonContent["2018-2019"][1]["8"].score}}</text>
+      <text class="ykt-ye-name">绩点：{{jsonContent["2018-2019"][1]["8"].point}}</text>
+    </view>
+  </view>
+</view>
+
+<view class="ykt-card">
+  <view class="ykt-content">
+    <view class="ykt-ye">
+      <text class="ykt-ye-name">科目：{{jsonContent["2018-2019"][1]["9"].lesson_name}}</text>
+      <text class="ykt-ye-name">成绩：{{jsonContent["2018-2019"][1]["9"].score}}</text>
+      <text class="ykt-ye-name">绩点：{{jsonContent["2018-2019"][1]["9"].point}}</text>
+    </view>
+  </view>
+</view>
+
+<view class="ykt-card">
+  <view class="ykt-content">
+    <view class="ykt-ye">
+      <text class="ykt-ye-name">科目：{{jsonContent["2018-2019"][1]["10"].lesson_name}}</text>
+      <text class="ykt-ye-name">成绩：{{jsonContent["2018-2019"][1]["10"].score}}</text>
+      <text class="ykt-ye-name">绩点：{{jsonContent["2018-2019"][1]["10"].point}}</text>
+    </view>
+  </view>
+</view>
+
+<view class="ykt-card">
+  <view class="ykt-content">
+    <view class="ykt-ye">
+      <text class="ykt-ye-name">科目：{{jsonContent["2018-2019"][1]["11"].lesson_name}}</text>
+      <text class="ykt-ye-name">成绩：{{jsonContent["2018-2019"][1]["11"].score}}</text>
+      <text class="ykt-ye-name">绩点：{{jsonContent["2018-2019"][1]["11"].point}}</text>
+    </view>
+  </view>
+</view>
+
+
+<!-- <view class="ykt-detail-wraper">
+  <view class="ykt-head">
+    <text class="ykt-type-name">其他信息</text>
+  </view>
+  <view class="detail-list">
+    <view class="detail-item">
+      <text class="detail-item-label">性别</text>
+      <text class="detail-item-value">{{jsonStr.sex}}</text>
+    </view>
+    <view class="detail-item">
+      <text class="detail-item-label">民族</text>
+      <text class="detail-item-value">{{jsonStr[0][0].stuNation}}</text>
+    </view>
+    <view class="detail-item">
+      <text class="detail-item-label">出生日期</text>
+      <text class="detail-item-value">{{jsonStr[0][0].stuBirth}}</text>
+    </view>
+  </view>
+</view> -->
+
+
+
+<view class="weui-footer">
+  <view class="weui-footer__links">
+    <navigator url="/pages/features/about" class="weui-footer__link">LYM&DY</navigator>
+    <navigator url="/pages/features/about" class="weui-footer__link">微广青</navigator>
+  </view>
+  <view class="weui-footer__text">微广青 © 2018 广东青年职业学院.</view>
+</view>

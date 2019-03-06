@@ -1,0 +1,83 @@
+/* pages/bookSearch/index.wxss */
+@import "../common/weui.wxss";
+
+@keyframes kf-marque-animation {
+  0% {
+    transform: translateX(0);
+  }
+
+  100% {
+    transform: translateX(-33.3%);
+  }
+}
+
+.login-btn {
+  font-size: 13pt;
+  line-height: 85rpx;
+  height: 85rpx;
+  background: #04c065;
+  color: #fff;
+  text-align: center;
+  border-radius: 25px;
+  box-shadow: 5rpx 5rpx 15rpx #ccc;
+  margin: 0 30rpx 30rpx;
+}
+
+.describe {
+  height: 100vw;
+}
+
+.marquee {
+  width: 100%;
+  height: 30px;
+  line-height: 30px;
+  background: #7acfa6;
+  color: rgba(0, 0, 0, 0.74);
+  border: none;
+  display: block;
+  margin: 0 auto;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: clip;
+  position: relative;
+  font-size: 28rpx;
+}
+
+.marquee .content {
+  display: inline-block;
+  position: relative;
+  padding-right: 0px;
+  /* 跑马灯设置 */
+  animation: kf-marque-animation 30s linear infinite;
+  white-space: nowrap;
+}
+
+.logo-sub {
+  text-align: center;
+  margin-top: 50rpx;
+  margin-bottom: 50rpx;
+  color: #666;
+}
+
+.searchbar-result {
+  margin-top: 0;
+  font-size: 14px;
+}
+
+.searchbar-result:before {
+  display: none;
+}
+
+.weui-cell {
+  padding: 12px 15px 12px 35px;
+}
+
+.bookImg {
+  width: 120rpx;
+  height: 160rpx;
+  padding: -12px 0px 0px 0px;
+}
+
+.weui-panel__bd {
+  padding-top: -80rpx;
+}

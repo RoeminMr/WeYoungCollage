@@ -1,0 +1,4 @@
+<!--pages/biaobai/index/index.wxml-->
+<navigator url="/page/person/person">
+
+</navigator>
